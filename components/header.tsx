@@ -23,10 +23,10 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-5 left-10 right-10 z-50 rounded-xl transition-all duration-300",
-        isScrolled ? "bg-white/45 backdrop-blur-sm shadow-sm" : "bg-transparent border-radius-10",
+        isScrolled ? "bg-white/45 backdrop-blur-sm shadow-sm" : "bg-white/45 border-radius-10",
       )}
     >
-      <div className="container mx-auto px-4 bg-white/35 rounded-xl">
+      <div className="container mx-auto px-4 rounded-xl">
         <div className="flex items-center justify-between h-20">
           <Link
             href="/"
@@ -72,7 +72,7 @@ export default function Header() {
         <div className="fixed inset-0 bg-white z-50 md:hidden">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-20">
-              <Link href="/" className="font-display text-2xl font-bold text-white">
+              <Link href="/" className="font-display text-2xl font-bold text-primary">
                 RJ SHOOT
               </Link>
               <button className="p-2 rounded-md text-gray-900" onClick={() => setIsMenuOpen(false)}>
